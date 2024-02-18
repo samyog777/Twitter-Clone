@@ -1,0 +1,244 @@
+* {
+    background-color: black;
+    color: #E7E9EA;
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    display: flex;
+}
+
+.first_col {
+    padding-left: 18rem;
+    border-right: 1px solid rgb(75, 71, 71);
+    /* position: fixed; */
+    width: 300px;
+}
+
+.logo {
+    background-image: url(logo.jpg);
+    height: 45px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+/* List of First column */
+
+ul {
+    list-style: none;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+li p{
+    display: inline;
+    padding-left: 2rem;
+}
+
+.btn p{
+    font-size: 1.3rem;
+}
+
+.btn {
+    padding: 10px;
+    border: none;
+}
+
+.btn i {
+    font-size: 1.5rem;
+}
+
+.btn:hover i,.btn:hover p{
+    background-color: rgb(59, 49, 49);
+    transition: background-color 0.3s ease;
+}
+.btn:hover{
+    background-color: rgb(59, 49, 49);    /* background-color: #089264; */
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+li {
+    padding: 0.5rem;
+}
+
+/* For Post Button */
+
+.post {
+    background-color: #00ba7c;
+    color: #ffffff;
+    padding: 15px 95px;
+    margin-bottom: 8rem;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bolder;
+    border: none;
+}
+
+.post:hover {
+    background-color: #089264;
+}
+
+/* Profile Things */
+.profile {
+    padding-top: 49px;
+}
+.account {
+    padding: 10px;
+    width: 280px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    border: none;
+}
+
+.photo {
+    background-image: url(profile.jpg);
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    padding-right: 50px;
+}
+
+.other h2 {
+    font-size: 1rem;
+}
+.other p{
+    padding-left: 15px;
+    font-size: 1rem;
+    color: rgb(170, 160, 160);
+}
+
+.account:hover,
+.account:hover p,
+.account:hover h2,
+.account:hover .menu{
+    border-radius: 20px;
+    background-color: rgb(42, 34, 34);
+    transition: background-color 0.3s ease;
+}
+
+
+
+/* SECOND COLUMN */
+/* CONTAINS AND SCROLL */
+
+.second_col {
+    background-color: black;
+    width: 600px;
+    border-right: 1px solid rgb(75, 71, 71);
+}
+
+.main-first{
+    border-top: 1px solid rgb(75, 71, 71);
+    border-right: 1px solid rgb(75, 71, 71);
+    border-bottom: 1px solid rgb(75, 71, 71);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+/* 
+.first{
+    background-color: white;
+    flex-grow: 9;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main-first i{
+    flex-grow: 0.2;
+    margin-left: 20px;
+}
+
+.one {
+    padding: 16px;
+    border: none;
+    flex-grow: 5;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+}
+
+.one p{
+    opacity: 0.5;
+}
+
+.one:hover p{
+    opacity: 1;
+}
+
+.one{
+    text-align: center;
+    width: auto;
+    font-size: 15px;
+    color: rgb(113, 109, 109); 
+    font-weight: 700;
+    border-bottom: 4px black solid;
+}
+
+.one:hover{
+    border-bottom: 4px rgb(0, 186, 124) solid;
+} */
+
+.first {
+    background-color: white;
+    flex-grow: 9;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main-first i {
+    flex-grow: 0.4;
+    margin-left: 20px;
+}
+
+.one {
+    padding: 16px;
+    border: none;
+    flex-grow: 5;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+}
+
+.one p {
+    opacity: 0.5;
+}
+
+.one:hover p {
+    opacity: 1;
+}
+
+.one {
+    text-align: center;
+    width: auto;
+    font-size: 15px;
+    color: rgb(113, 109, 109);
+    font-weight: 700;
+    position: relative;
+    border-bottom: 4px black solid;
+    transition: border-width 0.3s ease;
+}
+
+.one::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    width: 50%;
+    height: 2px;
+    background-color: black(255, 0, 0);
+    transition: width 0.3s ease;
+}
+
+.one:hover::before {
+    background-color: green;
+    width: 25%;
+}
