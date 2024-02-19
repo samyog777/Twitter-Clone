@@ -1,5 +1,5 @@
 * {
-    background-color: black;
+    background-color: #010001;
     color: #E7E9EA;
     padding: 0;
     margin: 0;
@@ -270,10 +270,120 @@ li {
     padding-left: 65px;
     display: flex;
 }
+
+.lists ul li{
+    padding-left: 12px ;
+}
+
 .lists ul li i{
     color: #00ba7c;
 }
 
 .small-post {
     padding-right: 20px;
+    cursor: pointer;
+    background-color: #325F3F;
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    font-weight: bolder;
+    margin-right: 10px;
 }
+
+.small-post button {
+    border: none;
+}
+
+.small-post h3{
+    color: #828c90;
+    background-color: #325F3F;
+    border: none;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+/* Third content in second Row */
+.third {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgb(75, 71, 71);
+}
+.third p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #00ba7c;
+    font-size: 1rem;
+    padding: 5px;
+}
+
+/* Feeds */
+
+.forth {
+    display: flex;
+    margin: 15px;
+}
+
+/* First of the forth */
+.profile_content {
+    background-image: url(content.jpg);
+    height: 40px;
+    width: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+/* Second of the forth */
+/* Display of the contents owners information */
+.Usernames {
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 240px;
+}
+
+.main_content {
+    padding-left: 10px;
+}
+
+.name {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.blue_tick {
+    background-image: url(blue-tick.png);
+    height: 15px;
+    width: 15px;
+    background-size: cover;
+}
+
+.username {
+    padding-right: 20px;
+}
+
+.username p{
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #5C6165;
+}
+
+.Text {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    font-size: 1rem;
+}
+
+.visual_content {
+    background-image: url(feed.png);
+    height: 600px;
+    width: 450px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 5%;
+}
+
