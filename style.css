@@ -18,6 +18,7 @@ body{
 }
 
 .logo {
+    cursor: pointer;
     background-image: url(logo.jpg);
     height: 45px;
     background-size: contain;
@@ -43,6 +44,7 @@ li p{
 }
 
 .btn {
+    cursor: pointer;
     padding: 10px;
     border: none;
 }
@@ -52,11 +54,11 @@ li p{
 }
 
 .btn:hover i,.btn:hover p{
-    background-color: rgb(59, 49, 49);
+    background-color:  #171919;
     transition: background-color 0.3s ease;
 }
 .btn:hover{
-    background-color: rgb(59, 49, 49);    /* background-color: #089264; */
+    background-color:  #171919;    /* background-color: #089264; */
     border-radius: 20px;
     transition: background-color 0.3s ease;
 }
@@ -68,6 +70,7 @@ li {
 /* For Post Button */
 
 .post {
+    cursor: pointer;
     background-color: #00ba7c;
     color: #ffffff;
     padding: 15px 95px;
@@ -86,7 +89,9 @@ li {
 .profile {
     padding-top: 49px;
 }
+
 .account {
+    cursor: pointer;
     padding: 10px;
     width: 280px;
     display: flex;
@@ -118,7 +123,7 @@ li {
 .account:hover h2,
 .account:hover .menu{
     border-radius: 20px;
-    background-color: rgb(42, 34, 34);
+    background-color: #171919;
     transition: background-color 0.3s ease;
 }
 
@@ -141,7 +146,7 @@ li {
     justify-content: flex-end;
     align-items: center;
 }
-/* 
+
 .first{
     background-color: white;
     flex-grow: 9;
@@ -179,53 +184,15 @@ li {
     font-size: 15px;
     color: rgb(113, 109, 109); 
     font-weight: 700;
-    border-bottom: 4px black solid;
-}
-
-.one:hover{
-    border-bottom: 4px rgb(0, 186, 124) solid;
-} */
-
-.first {
-    background-color: white;
-    flex-grow: 9;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.main-first i {
-    flex-grow: 0.4;
-    margin-left: 20px;
-}
-
-.one {
-    padding: 16px;
-    border: none;
-    flex-grow: 5;
-    display: flex;
-    text-align: center;
-    justify-content: center;
     position: relative;
 }
 
-.one p {
-    opacity: 0.5;
+.first-one:hover {
+    background-color: #171919;
 }
 
-.one:hover p {
-    opacity: 1;
-}
-
-.one {
-    text-align: center;
-    width: auto;
-    font-size: 15px;
-    color: rgb(113, 109, 109);
-    font-weight: 700;
-    position: relative;
-    border-bottom: 4px black solid;
-    transition: border-width 0.3s ease;
+.second-one:hover {
+    background-color: #171919;
 }
 
 .one::before {
@@ -233,12 +200,80 @@ li {
     position: absolute;
     bottom: -2px;
     width: 50%;
-    height: 2px;
-    background-color: black(255, 0, 0);
-    transition: width 0.3s ease;
+    height: 5px;
+    border-radius: 40px;
 }
 
 .one:hover::before {
-    background-color: green;
+    background-color: rgba(0, 202, 124, 1);
     width: 25%;
+}
+
+.i-tag {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#i-tag {
+    background-color: black;
+    display: flex;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.i-tag i:hover {
+    cursor: pointer;
+}
+
+.i-tag:hover #i-tag{
+    background-color: #171919;
+    border-radius: 50%;
+}
+
+/* What is happing part */
+
+.second-first {
+    display: flex;
+    align-items: center;
+}
+
+.photo1 {
+    margin: 15px;
+    background-image: url(profile.jpg);
+    height: 40px;
+    width: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.second-first h1 {
+    color: #70777B;
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+/* Posting and other lists */
+
+.second-second {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(75, 71, 71);
+}
+
+.lists ul {
+    padding-left: 65px;
+    display: flex;
+}
+.lists ul li i{
+    color: #00ba7c;
+}
+
+.small-post {
+    padding-right: 20px;
 }
