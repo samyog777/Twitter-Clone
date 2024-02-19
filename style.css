@@ -5,15 +5,20 @@
     margin: 0;
 }
 
+body {
+    padding: 0;
+    margin: 0;
+}
 
-body{
+.main-main{
     display: flex;
+    flex-direction: row;
+    height: 100vh;
 }
 
 .first_col {
     padding-left: 18rem;
     border-right: 1px solid rgb(75, 71, 71);
-    /* position: fixed; */
     width: 300px;
 }
 
@@ -136,6 +141,11 @@ li {
     background-color: black;
     width: 600px;
     border-right: 1px solid rgb(75, 71, 71);
+    overflow-y: auto;
+}
+
+.second_col::-webkit-scrollbar {
+  display: none;
 }
 
 .main-first{
@@ -249,6 +259,7 @@ li {
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .second-first h1 {
@@ -272,6 +283,7 @@ li {
 }
 
 .lists ul li{
+    cursor: pointer;
     padding-left: 12px ;
 }
 
@@ -292,6 +304,7 @@ li {
 }
 
 .small-post button {
+    cursor: pointer;
     border: none;
 }
 
@@ -305,6 +318,7 @@ li {
 
 /* Third content in second Row */
 .third {
+    cursor: pointer;
     height: 50px;
     display: flex;
     align-items: center;
@@ -318,11 +332,14 @@ li {
     padding: 5px;
 }
 
+/* Forth Container in second Column */
 /* Feeds */
 
 .forth {
+    cursor: pointer;
     display: flex;
     margin: 15px;
+    border-bottom: 1px solid rgb(75, 71, 71);
 }
 
 /* First of the forth */
@@ -338,7 +355,6 @@ li {
 /* Second of the forth */
 /* Display of the contents owners information */
 .Usernames {
-    /* background-color: red; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -380,10 +396,77 @@ li {
 
 .visual_content {
     background-image: url(feed.png);
-    height: 600px;
+    height: 550px;
     width: 450px;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     border-radius: 5%;
 }
 
+.like_and_others ul{
+    padding-top: 10px;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.like_and_others ul li i{
+    color: #5C6165; 
+}
+
+.like_and_others ul li {
+    color: #5C6165;
+}
+
+/* Last column */
+
+.others_content {
+    padding-left: 30px; 
+    padding-top: 18px;
+    height: 630px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.others_content i{
+    color: #5C6165;
+}
+
+.right_side{
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Content image for second */
+.profile_content2 {
+    background-image: url(second_content.jpg);
+    height: 40px;
+    width: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+.Usernames2 {
+    width: 260px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.username2 {
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #5C6165;
+}
+
+.visual_content2 {
+    background-image: url(ronaldo.jpeg);
+    height: 550px;
+    width: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5%;
+}
