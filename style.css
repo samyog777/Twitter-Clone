@@ -479,7 +479,7 @@ li {
 }
 
 .third_one {
-    background-color: #212227;
+    background-color: #16191D;
     border-radius: 30px;
     height: 44px;
     width: 350px;
@@ -498,15 +498,16 @@ li {
 }
 
 .third_one i{
-    background-color: #212227;
+    background-color: #16191D;
     padding-left: 20px;
     width: 40px;
     color: #5C6165;
+
 }
 
 input {
     font-size: 1rem;
-    background-color: #212227;
+    background-color: #16191D;
     border: none;
     outline: none;
 }
@@ -514,7 +515,7 @@ input {
 .search {
     border: none;
     height: 40px;
-    width: 250px;
+    width: 350px;
 }
 
 
@@ -526,16 +527,17 @@ input {
     padding: 10px;
     border-radius: 20px;
     margin-top: 20px;
-    width: 350px;
-    background-color: #212227;
+    width: 335px;
+    background-color: #16191D;
     display: flex;
     flex-direction: column;
     align-items:start;
     justify-content: center;
 }
 
-.third_two h1,p {
-    background-color:  #212227;
+.third_two h1,
+.third_two p{
+    background-color: #16191D;
 }
 
 .third_two h1 {
@@ -561,4 +563,55 @@ input {
     font-size: 15px;
     font-weight: 700;
     color: white;
+}
+
+/* For third columns third section */
+
+.third_three {
+    padding: 12px 16px;
+    border-radius: 20px;
+    margin-top: 20px;
+    width: 325px;
+    background-color: #16191D;
+}
+
+.trends {
+    display: flex;
+    justify-content: space-between;
+    background-color: #16191D;
+    height: 80px;
+}
+
+.text {
+    background-color: #16191D;
+}
+
+.third_three h1,
+.third_three p,
+.third_three h4,
+.menu_last,
+.menu_last i{
+    padding-bottom: 2px;
+    background-color: #16191D;
+}
+
+.third_three h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.7rem;
+    padding-bottom: 20px;
+}
+
+.third_three p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.85rem;
+    color: rgb(142, 144, 146);
+}
+
+.third_three h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+}
+
+.menu_last i {
+    color: rgb(142, 144, 146);
 }
